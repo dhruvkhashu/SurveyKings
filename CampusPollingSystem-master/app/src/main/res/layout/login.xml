@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="#fcfcfc"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.root.ocps.MainActivity"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+
+
+
+        app:title="Log In"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="#f4f4ec"
+        android:id="@+id/toolbar2" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+
+        android:hint="Roll Number"
+        android:background="#f9f9d3"
+        android:id="@+id/roll" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/login_layout"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_margin="8dp"
+        android:background="#f9f9d3"
+        android:id="@+id/password" />
+
+    <Button
+        android:text="LOGIN"
+        android:onClick="voter_login"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
+
+
+
+    <TextView
+        android:text="Forgot Password?"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:onClick="forgot_password"
+        android:layout_marginLeft="100dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_password" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:text="CHANGE PASSWORD"
+        android:onClick="change_password"
+        android:id="@+id/change_pass"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/o_layout">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:hint="Enter OTP"
+            android:background="#f9f9d3"
+            android:id="@+id/otp" />
+
+        <Button
+            android:text="VERIFY"
+            android:onClick="verify_otp"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/set_new_pass"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:inputType="textPassword"
+
+            android:hint="Enter New Password"
+            android:background="#f9f9d3"
+            android:id="@+id/new_pass" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+
+            android:hint="Re-Enter Password"
+            android:background="#f9f9d3"
+            android:id="@+id/re_pass" />
+        <Button
+            android:layout_width="match_parent"
+            android:onClick="ChangePassword"
+            android:text="SUBMIT"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

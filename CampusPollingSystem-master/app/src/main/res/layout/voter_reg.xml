@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:background="#fcfcfc"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.root.ocps.MainActivity"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:title="Voter Registration"
+        app:titleTextColor="#f4f4ec" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:layout_margin="5dp"
+
+
+        android:hint="Roll Number"
+        android:background="#f9f9d3"
+        android:id="@+id/roll" />
+
+            <Button
+                android:text="REGISTER"
+                android:onClick="Search_voter"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:id="@+id/otp_layout">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:layout_margin="5dp"
+            android:hint="Enter OTP"
+            android:background="#f9f9d3"
+            android:id="@+id/otp" />
+
+        <Button
+            android:text="VERIFY"
+            android:onClick="verify_otp"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/searchlayout">
+
+    <TextView
+        android:hint="Name"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="#f9f9d3"
+        android:layout_width="match_parent"
+
+        android:id="@+id/name" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+
+        android:layout_height="40dp"
+        android:background="#f9f9d3"
+        android:inputType="textPersonName"
+        android:hint="Deaprtment"
+        android:ems="10"
+        android:id="@+id/dept"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="#f9f9d3"
+        android:inputType="textPersonName"
+        android:hint="Semester"
+        android:ems="10"
+        android:id="@+id/sem"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="#f9f9d3"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Contact"
+        android:id="@+id/contact" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Set Password"
+        android:layout_margin="8dp"
+        android:background="#f9f9d3"
+        android:id="@+id/password" />
+
+            <CheckBox
+                android:text="Are You Hosteler?"
+
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hosteler"
+                />
+
+
+
+    <TextView
+        android:text="Select Grievances , if any"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:background="#f9f9d3"
+        android:textSize="20sp"
+        android:id="@+id/textView3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <CheckBox
+            android:text="WATER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/water"
+           />
+
+        <CheckBox
+            android:text="LAUNDRY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/laundry"
+             />
+
+        <CheckBox
+            android:text="FOOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/food"
+             />
+
+        <CheckBox
+            android:text="SWEEPING"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sweeping"
+            />
+
+        <CheckBox
+            android:text="WIFI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wifi"
+
+            />
+
+
+
+    </LinearLayout>
+    <Button
+        android:text="SUBMIT"
+        android:onClick="Register"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/register" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

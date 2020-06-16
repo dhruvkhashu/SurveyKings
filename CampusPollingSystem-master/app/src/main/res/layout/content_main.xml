@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+
+
+    android:layout_height="match_parent"
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.root.ocps.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:background="?attr/colorPrimary"
+        android:layout_height="100dp"
+
+        android:id="@+id/frameLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="10dp"
+                android:text="WELCOME"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:textAlignment="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:text="TO"
+                android:textColor="#fff"
+                android:textAlignment="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+            <TextView
+                android:text="ONLINE POLLING PORTAL"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:id="@+id/textView7" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+
+        <Button
+            android:text="VOTER REGISTERATION"
+            android:onClick="voter_register"
+
+            android:background="#49acaca8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/v_reg"
+
+
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+        <Button
+            android:text="LOG IN"
+            android:onClick="login"
+            android:background="#49acaca8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/login"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.03"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+
+        <Button
+
+            android:text="VIEW VOTER'S GRIEVANCES"
+            android:onClick="grievances"
+            android:background="#49acaca8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:id="@+id/grievances"
+
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+
+        <Button
+            android:text="NOMINATION OF CANDIDATES"
+            android:onClick="CandReg"
+            android:background="#49acaca8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:id="@+id/nomination"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"/>
+
+     <Button
+         android:layout_width="match_parent"
+         android:text="VIEW ELECTION RESULT"
+         android:onClick="view_result"
+         android:id="@+id/result"
+         android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"/>
+
+</LinearLayout>
+
+
+
